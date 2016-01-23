@@ -1,6 +1,8 @@
-package com.lambdaworks.redis;
+package redis;
 
-import com.lambdaworks.redis.SimpleSerializers.JavaSerializer;
+import com.lambdaworks.redis.RedisClient;
+import com.lambdaworks.redis.RedisConnection;
+import redis.SimpleSerializers.JavaSerializer;
 import com.lambdaworks.redis.codec.ByteArrayCodec;
 import io.netty.util.internal.logging.InternalLogger;
 import io.netty.util.internal.logging.InternalLoggerFactory;
@@ -106,6 +108,17 @@ public class SimpleRedisConnection {
 
             return redisCommands.hdel(key.getBytes(), fieldsInBytes);
         } finally {
+            closeConnection(redisCommands);
+        }
+    }
+
+    public void clearAll(){
+        RedisConnection<byte[], byte[]> redisCommands = null;
+        try {
+            redisCommands = getRedisConnection();
+            redisCommands.flushall();
+        }
+        finally {
             closeConnection(redisCommands);
         }
     }

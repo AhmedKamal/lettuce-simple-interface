@@ -1,4 +1,4 @@
-package com.lambdaworks.redis.SimpleSerializers;
+package redis.SimpleSerializers;
 
 import com.lambdaworks.redis.RedisException;
 import io.netty.util.internal.logging.InternalLogger;
