@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.akamal.redis</groupId>
-    <artifactId>lettuce-interface</artifactId>
+    <artifactId>simple-redis</artifactId>
     <version>0.1</version>
 
     <dependencies>
