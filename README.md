@@ -1,7 +1,8 @@
 # Simple-Redis - A simple interface for caching in redis
 ===============================
+[![Build Status](https://travis-ci.org/AhmedKamal/simple-redis.svg?branch=master)](https://travis-ci.org/AhmedKamal/simple-redis) [![Coverage Status](https://coveralls.io/repos/github/AhmedKamal/simple-redis/badge.svg?branch=master)](https://coveralls.io/github/AhmedKamal/simple-redis?branch=master)
 
-![Build Status](https://travis-ci.org/AhmedKamal/simple-redis.svg?branch=master) [![CoverageStatus](https://coveralls.io/repos/github/AhmedKamal/simple-redis/badge.svg?branch=master)](https://coveralls.io/github/AhmedKamal/simple-redis?branch=master)
+
 
 A simple interface for caching objects in redis via lettuce in seconds !
 
